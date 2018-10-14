@@ -1,0 +1,38 @@
+
+  <div id="jumbo" style="width: 30%;">
+
+
+    <form (ngSubmit)="onSubmit()" class="form-style-7">
+      <ul>
+        <li>
+          <label for="photo">Photo</label>
+          <input type="file" name="pic" accept="image/*">
+          <span>Upload the picture here</span>
+        </li>
+        <li>
+          <label for="date">Date</label> <input type="date"
+                                                class="form-control" placeholder="Enter data XX/XX/XXXX" id="date"
+                                                required [(ngModel)]="dateValue" name="date">
+        </li>
+        <li>
+          <label for="location">Location</label> <input type="text"
+                                                    class="form-control" placeholder="Enter location" id="location"
+                                                    required [(ngModel)]="locationValue" name="location">
+        </li>
+        <li>
+          <label for="condition">Condition</label> <input type="text"
+                                                     class="form-control" placeholder="Enter condition" id="condition"
+                                                     required [(ngModel)]="conditionValue" name="condition">
+        </li>
+        <li>
+          <label for="comment">Comment</label> <input type="text"
+                                                   class="form-control" placeholder="Enter comment" id="comment"
+                                                   required [(ngModel)]="commentValue" name="comment">
+        </li>
+        <li>
+          <input type="submit" value="Submit" >
+        </li>
+      </ul>
+    </form>
+  </div>
+
